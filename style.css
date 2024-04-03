@@ -222,6 +222,7 @@ header li > a {
     display: flex;
     position: relative;
     line-height: inherit;
+    transition: var(--trans-color);
 
 }
 
@@ -245,6 +246,30 @@ header li > a {
 .header-top li {
     position: relative;
 }
+
+.header-top ul ul {
+    position: absolute;
+    left: -1em;
+    line-height: 2em;
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
+    z-index: 1;
+    display: none;
+}
+
+.header-top .right ul ul li a {
+    padding: 0.25em 1em;
+}
+
+.header-top .right ul ul li.current {
+    background-color: var(--border-color);
+}
+
+.header-top li:hover ul {
+    display: block;
+}
+
+
 
 
    /* 01. HEADER ............................
