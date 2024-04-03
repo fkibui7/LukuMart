@@ -270,17 +270,66 @@ header li > a {
 }
 
 
-
-
    /* 01. HEADER ............................
    *   b. Header Nav
    *.................*/
-
-
+.trigger {
+    font-size: 1.5em;
+    display: flex;
+    padding: 0.25em;
+    margin-right: 0.5em;
+}
+.logo a {
+    font-family: 'Poppins';
+    font-size: 1.75em;
+    position: relative;
+    font-weight: var(--fw8);
+    display: flex;
+    padding-left: 0.75em;
+    margin-right: 2em;
+}
+.circle {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    border-radius: var(--percent50);
+    background-color: var(--ligh-bg-color);
+    z-index: -1;
+}
+.circle::before {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: var(--percent50);
+    background-color: var(--secondary-color);
+    bottom: 5px;
+    right: 5px;
+    opacity: .4;
+}
 
    /* 01. HEADER ............................
    *   c. Header Main, Departments Category
    *.................*/
+
+
+
+
+   /* 01. HEADER ............................
+   *   d. Search Form
+   *.................*/
+
+
+
+
+
+
+
+   /* 01. HEADER ............................
+   *   e. Responsive MENU - Off Canvas
+   * .................*/
 
 
 
@@ -302,6 +351,9 @@ header li > a {
 @media  screen and (min-width : 992px) {
     .container     {
      padding: 0 2em;
+    }
+    .desktop-hide {
+        display: none;
     }
 
     
