@@ -11,7 +11,7 @@ Fonts:
     --secondary-color: #794afa;
     --secondary-dark-color: #453c5c;
 
-    --wgite-color: #ffffff;
+    --white-color: #ffffff;
     --ligh-bg-color: #f2f3f5;
     --light-text-color: #7c899a;
     --border-color: #e5e8ec;
@@ -169,6 +169,11 @@ h4{
 }
 
 
+.mobile-hide {
+    display: none;
+}
+
+
 
 /*....................
   *Structure Styling
@@ -273,6 +278,13 @@ header li > a {
    /* 01. HEADER ............................
    *   b. Header Nav
    *.................*/
+
+.header-nav {
+    padding: 0.5em 0;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid var(--border-color);
+}
+
 .trigger {
     font-size: 1.5em;
     display: flex;
@@ -309,6 +321,45 @@ header li > a {
     right: 5px;
     opacity: .4;
 }
+.header-nav nav > ul {
+    line-height: 100px;
+    gap: 2em;
+}
+
+.fly-item {
+    position: absolute;
+    height: 16px;
+    font-size: var(--font-small);
+    padding: 3px;
+    text-align: center;
+    line-height: 10px;
+    color: var(--white-color);
+}
+nav .fly-item {
+    top: 50%;
+    margin-top: -24px;
+    width: 30px;
+    border-radius: 3px;
+    right: -32px;
+    background-color: var(--primary-color);
+}
+.header-nav .right {
+    position: relative;
+    margin-left: auto;
+}
+.header-nav .right .icon-large {
+    position: relative;
+}
+.header-nav .right .fly-item {
+    top: 0;
+    right: 16px;
+    width: 16px;
+    background-color: var(--secondary-dark-color);
+    border-radius: var(--percent50);
+}
+
+
+
 
    /* 01. HEADER ............................
    *   c. Header Main, Departments Category
@@ -355,6 +406,20 @@ header li > a {
     .desktop-hide {
         display: none;
     }
+    .mobile-hide{
+        display: block;
+    }
+    .logo a {
+        margin-right: 2em;
+    }
+    .header-nav {
+        padding: 0;
+        margin: 0;
+        border-bottom: 0;
+    }
+    .header-nav .right li > a {
+        margin-left: 1em;
+    } 
 
     
 }
