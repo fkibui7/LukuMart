@@ -77,3 +77,99 @@ table{
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+input::placeholder{
+    font: inherit;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Poppins';
+}
+
+h1{
+    font-size: calc(1.3em + 1vh);
+    font-weight: var(--fw8);
+    line-height: 1;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3{
+    font-size: 1.2em;
+    font-weight: var(--fw7);
+}
+
+h4{
+    font-size: 1em;
+    font-weight: var(--fw6);
+}
+
+/*Reusble Selector*/
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 0.938em;
+}
+
+.column{
+    margin-left: -0.938em;
+    margin-right: -0.938em;
+}
+
+.column .row {
+    padding: 0 0.938em;
+}
+
+.flexwrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexcenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexitems{
+    display: flex;
+    align-items: center;
+}
+
+.flexcol {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  screen and (min-width : 992px) {
+    .container     {
+     padding: 0 2em;
+    }
+
+    
+}
