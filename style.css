@@ -13,7 +13,7 @@ Fonts:
 
     --wgite-color: #ffffff;
     --ligh-bg-color: #f2f3f5;
-    --light-text-collor: #7c899a;
+    --light-text-color: #7c899a;
     --border-color: #e5e8ec;
     --dark-color: #0a021c;
 
@@ -143,6 +143,14 @@ h4{
     display: flex;
     flex-direction: column;
     gap: 1em;
+}
+
+.main-links a:hover {
+    color: var(--secondary-color);
+}
+
+.second-links a :hover {
+    color: var(--light-text-color);
 }
 
 
