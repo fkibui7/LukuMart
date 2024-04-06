@@ -18,7 +18,7 @@ Fonts:
     --dark-color: #0a021c;
 
     --font-small: 13px;
-    --font-smaller: 111px;
+    --font-smaller: 11px;
 
     --percent100: 100%;
     --percent50: 50%;
@@ -216,6 +216,7 @@ h4{
     background-color: var(--secondary-dark-color);
     color: var(--white-color);
 }
+
 .view-all {
     font-size: var(--font-small);
     display: flex;
@@ -223,7 +224,7 @@ h4{
     transition: var(--trans-color);
 }
 
-mini-text {
+.mini-text {
     font-size: var(--font-smaller);
     color: var(--white-color);
 }
@@ -544,7 +545,7 @@ nav .fly-item {
         display: none;
     }
 
-    nav li.has-child:hover  .mega{
+    nav li.has-child:hover .mega{
         display: block;
 
     }
