@@ -160,7 +160,7 @@ h4{
 
 .icon-small {
     font-size: 1.25en;
-    margin: auto;
+    margin-left: auto;
 }
 
 .icon-large {
@@ -475,6 +475,12 @@ nav .fly-item {
     width: 60px;
 }
 
+.dpt-menu > ul > li > a {
+    font-size: var(--font-small);
+    height: 46px;
+    align-items: center;
+}
+
    /* 01. HEADER ............................
    *   d. Search Form
    *.................*/
@@ -645,7 +651,24 @@ form.search button:hover{
         text-align: center;
         color: var(--secondary-dark-color);
     }
+    .header-main .right {
+        max-width: 600px;
+        margin-left: auto;
+    }
 
-
-    
+    /* Departments menu */
+    .dpt-menu {
+        position: absolute;
+        top: var(--percent100);
+        width: 300px;
+        background-color: var(--white-color);
+        border: 1px solid (--border-color);
+        border-top: 0;
+        border-bottom: 0;
+    }
+    .dpt-menu > ul > li > a {
+        font-weight: var(--fw5);
+        padding: 0 1.5em;
+        border-bottom: 1px solid var(--border-color);
+    }
 }
