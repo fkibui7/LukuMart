@@ -484,6 +484,10 @@ nav .fly-item {
     display: block;
 }
 
+.dpt-menu .has-child:hover li a:hover {
+    text-decoration: underline;
+}
+
    /* 01. HEADER ............................
    *   d. Search Form
    *.................*/
@@ -699,16 +703,16 @@ form.search button:hover{
     }
 
     .dpt-menu .beauty ul {
-        background-image: url(assets/menu/skincare1.jpg);
+        background-image: url(assets/products/1.jpg);
     }
     .dpt-menu .electric ul {
-        background-image: url(assets/menu/skincare2.jpg);
+        background-image: url(assets/products/2.jpg);
     }
     .dpt-menu .fashion ul {
-        background-image: url(assets/menu/skincare3.jpg);
+        background-image: url(assets/products/3.jpg);
     }
     .dpt-menu .homekit .mega {
-        background-image: url(assets/menu/skincare1.jpg);
+        background-image: url(assets/products/4.jpg);
     }
     .dpt-menu .has-child > :where(ul,.mega)::before{
         content: '';
@@ -717,7 +721,7 @@ form.search button:hover{
         left: 0;
         right: 0;
         bottom: 0;
-        background: linear-gradient(90deg, rgba(225,225,225,1) 0%, rgba(225,225,));
+        background:linear-gradient(90deg, rgba(225,225,225,1) 0%, rgba(225, 225, 225, 0.5) 0%);
     }
 
     .dpt-menu .mega {
